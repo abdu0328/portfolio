@@ -1,7 +1,83 @@
+:root {
+    /* brand colours */
+    --brand-color: #FEC32D;
+    --secondary-color: #050300;
+    --accent-color: #FBFCFF;
+    /* default heading sizes */
+    --h2-size: 50px;
+    --h3-size: 30px;
+    --h4-size: 22px;
+    --h5-size: 15px;
+  }
+
+body {
+    background-color: var(--secondary-color);
+}
+
 .wrapper {
     padding-left: 1rem;
     padding-right: 1rem;
+    background-color: var(--secondary-color);
 }
+
+/* Nav */
+.nav-item{
+    text-align: center;
+}
+
+nav{
+    background-color: var(--brand-color);
+}
+
+.navbar{
+    padding-top:0;
+    padding-bottom:0;
+}
+
+.container-fluid {
+    background-color: var(--brand-color);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* mobile headings and paragraphs */
+h2 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: var(--h2-size);
+    text-align: center;
+    color: var(--brand-color);
+    font-weight: bold;
+}
+
+h3 {
+    font-size: var(--h3-size);
+    /* text-align: center; */
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+h4 {
+    font-size: var(--h4-size);
+}
+
+h5 {
+    font-size: var(--h5-size);
+    color: var(--secondary-color);
+}
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+/* project overview */
+.projectOverview, p{
+margin-bottom: 3rem;
+}
+
 
 .container {
     margin-top: 1rem;
