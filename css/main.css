@@ -1,0 +1,38 @@
+.wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.bgf img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0px 25px 25px 0px;
+}
+.bgc {
+    z-index: 1;
+    width: 50%;
+    padding: 1rem;
+    padding-top: 4rem;
+    height: 300px;
+    background-color: #FEC32D;
+    border-radius: 25px 0px 0px 25px;
+
+}
+
+.bgf {
+    z-index: 0;
+    width: 50%;
+    /* background-color: #FEC32D; */
+    padding: 0;
+    margin: 0;
+    border-radius: 25px;
+}
+
+footer {
+    background-color: #FEC32D;
+}
