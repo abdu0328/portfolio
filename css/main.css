@@ -21,8 +21,8 @@ body {
 }
 
 .wrapper {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     background-color: var(--secondary-color);
 }
 
@@ -231,6 +231,13 @@ margin-bottom: 1rem;
     border-radius: 25px;
 } */
 
+        /* CSS for the tag */
+        .blog-tag {
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
 
 
 footer {
@@ -238,6 +245,7 @@ footer {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
 
 /* .mb-4{
     margin: 0 0 0;
@@ -310,6 +318,19 @@ footer {
     border-color: #fdbe1a;
 }
 
+.card-button-connect {
+    width: 150px;
+    height: 40px;
+     /* Add a fixed height to vertically center the text */
+    background-color: var(--brand-color);
+    border-color: #fdbe1a;
+    /* display: flex; */
+    align-items: center; 
+    /* Vertically center the content */
+    justify-content: center; 
+    /* Horizontally center the content */
+}
+
 /* .project1 {
     background-color: #050300;
 }
@@ -325,7 +346,46 @@ footer {
     background-color: #204165;
 } */
 
+/* Pulse Animation
+@keyframes continuousPulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
 
+
+.continuous-pulse {
+    animation: continuousPulse 2s infinite;
+} */
+
+
+
+.custom-animation {
+    animation: custom-bounceInDown 1.2s; /* Custom animation duration */
+    animation-fill-mode: both; /* Keep animation effects after animation completes */
+}
+
+/* Define the custom keyframe animation */
+@keyframes custom-bounceInDown {
+    0%, 20%, 40% {
+        opacity: 0; /* Hide the element */
+        transform: translateY(-1000px); /* Move the element off-screen */
+    }
+    60% {
+        opacity: 0.5; /* Show the element */
+        transform: translateY(20px); /* Move down slightly */
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(-05px); /* Move up slightly */
+    }
+    100% {
+        transform: translateY(0); /* Bring the element down */
+    }
+}
 
 
   
@@ -355,6 +415,7 @@ footer {
         height: 500px;
         
       } */
+
     
     @media (max-width: 990px) {
 
@@ -395,9 +456,15 @@ footer {
         object-fit:cover;
         object-position: 0px 40%;
         display: block;
-        margin-left: auto;
+        margin-left: 200px;
         /* margin-right: auto; */
       }
+
+      /* .image-content{
+        margin-left: auto;
+        margin-right: auto;
+      } */
+
 /* take out */
     /* .navbar-nav {
         flex-direction: row;
@@ -413,7 +480,12 @@ footer {
 
     .text-content {
         margin-top:0;
-        padding-right: 250px;
+        /* padding-right: 200px; */
+        /* padding-left: auto; */
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 0;
+        padding-right: 2rem;
       }
 
     h2 {
@@ -477,5 +549,18 @@ footer {
         height: 100%;
         border-radius: 0px;
         object-fit: cover;
+    }
+
+    .card-button-connect {
+        width: 150px;
+        height: 50px;
+         /* Add a fixed height to vertically center the text */
+        background-color: var(--brand-color);
+        border-color: #fdbe1a;
+        display: flex;
+        align-items: center; 
+        /* Vertically center the content */
+        justify-content: center; 
+        /* Horizontally center the content */
     }
 }
