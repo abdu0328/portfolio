@@ -64,8 +64,11 @@
         <div class="row">
           <div class="col-lg-6">
             <picture>
-                <!-- add optimization and itemprop -->
-                <img class="responsive-img-container" itemprop="#" src="images/abdullah-headshot.jpg" alt="Yassin's Professional Headshot">
+              <!-- Use source elements for different image sources -->
+              <source media="(min-width: 1200px)" srcset="images/abdullah-headshot.jpg">
+              <source media="(min-width: 768px)" srcset="images/abdullah-headshot.jpg">
+              <!-- Fallback image for browsers that do not support the picture tag -->
+              <img class="responsive-img-container" src="images/abdullah-headshot.jpg" alt="Responsive Image" class="img-fluid">
             </picture>
           </div>
           <div class="text-content col-lg-6">
@@ -86,8 +89,14 @@
               <h5>Sub Title</h5>
               <h4>Main Title</h4>
             </div>
-            <!-- add image opt, item prop -->
-            <img src="images/uxui.jpg" class="card-img-top" alt="Image">
+            <picture>
+              <!-- Use source elements for different image sources -->
+              <source media="(min-width: 1200px)" srcset="images/vector-final-thumbnail.png">
+              <source media="(min-width: 768px)" srcset="images/vector-final-thumbnail.png">
+              <!-- Fallback image for browsers that do not support the picture tag -->
+              <img src="images/vector-final-thumbnail.png" alt="Responsive Image" class="card-img-top img-fluid">
+            </picture>
+            <!-- <img src="images/uxui.jpg" class="card-img-top" alt="Image"> -->
             <div class="card-body project1">
               <a href="project-1.html" class="btn btn-primary card-button">Learn More</a>
             </div>
@@ -100,8 +109,14 @@
               <h5>Digital Graphics</h5>
               <h4>Graphic Design Playground</h4>
             </div>
-            <!-- add image opt, item prop -->
-            <img src="images/vector-final-thumbnail.png" class="card-img-top" alt="Image">
+            <picture>
+              <!-- Use source elements for different image sources -->
+              <source media="(min-width: 1200px)" srcset="images/vector-final-thumbnail.png">
+              <source media="(min-width: 768px)" srcset="images/vector-final-thumbnail.png">
+              <!-- Fallback image for browsers that do not support the picture tag -->
+              <img src="images/vector-final-thumbnail.png" alt="Responsive Image" class="card-img-top img-fluid">
+            </picture>
+            <!-- <img src="images/vector-final-thumbnail.png" class="card-img-top" alt="Image"> -->
             <div class="card-body project2">
               <a href="graphics.html" class="btn btn-primary card-button">Learn More</a>
             </div>
@@ -117,8 +132,14 @@
               <h5>Photography</h5>
               <h4>Curation of Photoshoots</h4>
             </div>
-            <!-- add image opt, item prop -->
-            <img src="images/230412_untitled_57.jpg" class="card-img-top" alt="Image">
+            <picture>
+              <!-- Use source elements for different image sources -->
+              <source media="(min-width: 1200px)" srcset="images/230412_untitled_57.jpg">
+              <source media="(min-width: 768px)" srcset="images/230412_untitled_57.jpg">
+              <!-- Fallback image for browsers that do not support the picture tag -->
+              <img src="images/230412_untitled_57.jpg" alt="Responsive Image" class="card-img-top img-fluid">
+            </picture>
+            <!-- <img src="images/230412_untitled_57.jpg" class="card-img-top" alt="Image"> -->
             <div class="card-body project3">
               <a href="https://yassinabdullah.myportfolio.com/" target="_blank" class="btn btn-primary card-button">See Here</a>
             </div>
@@ -131,8 +152,15 @@
               <h5>Other Work</h5>
               <h4>Project Playground</h4>
             </div>
-            <!-- add image opt, item prop -->
-            <img src="images/uxui.jpg" class="card-img-top" alt="Image">
+
+            <picture>
+              <!-- Use source elements for different image sources -->
+              <source media="(min-width: 1200px)" srcset="images/uxui.jpg">
+              <source media="(min-width: 768px)" srcset="images/uxui.jpg">
+              <!-- Fallback image for browsers that do not support the picture tag -->
+              <img src="images/uxui.jpg" alt="Responsive Image" class="card-img-top img-fluid">
+            </picture>
+            <!-- <img src="images/uxui.jpg" class="card-img-top" alt="Image"> -->
             <div class="card-body project4">
               <a href="project-4.html" class="btn btn-primary card-button">Learn More</a>
             </div>

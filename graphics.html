@@ -62,8 +62,15 @@
       <div class="row p-4 justify-content-evenly">
         <div class="col-md-6 order-2 order-md-1">
           <div class="photo">
-                  <img class="rounded-3" src="images/vector-final.png" alt="">
-              </div>
+            <picture>
+              <!-- Use source elements for different image sources -->
+              <source media="(min-width: 1200px)" srcset="images/vector-final.png">
+              <source media="(min-width: 768px)" srcset="images/vector-final.png">
+              <!-- Fallback image for browsers that do not support the picture tag -->
+              <img class="rounded-3" src="images/vector-final.png" alt="Responsive Image" class="img-fluid">
+            </picture>
+            <!-- <img class="rounded-3" src="images/vector-final.png" alt=""> -->
+          </div>
         </div>
         <div class="col-md-6 order-1 order-md-2">
           <h3>Avatar Vectorization</h3>
@@ -91,7 +98,14 @@
         </div>
         <div class="col-md-6 order-2 order-md-2">
           <div class="photo">
-            <img src="images/movie-poster.png" alt="">
+            <picture>
+              <!-- Use source elements for different image sources -->
+              <source media="(min-width: 1200px)" srcset="images/movie-poster.png">
+              <source media="(min-width: 768px)" srcset="images/movie-poster.png">
+              <!-- Fallback image for browsers that do not support the picture tag -->
+              <img src="images/movie-poster.png" alt="Responsive Image" class="img-fluid">
+            </picture>
+            <!-- <img src="images/movie-poster.png" alt=""> -->
           </div>
         </div>
       </div>
@@ -99,8 +113,15 @@
       <div class="row p-4 justify-content-evenly">
         <div class="col-md-6 order-2 order-md-1">
           <div class="photo">
-                  <img class="rounded-3" src="images/character-vector.png" alt="">
-              </div>
+            <picture>
+              <!-- Use source elements for different image sources -->
+              <source media="(min-width: 1200px)" srcset="images/character-vector.png">
+              <source media="(min-width: 768px)" srcset="images/character-vector.png">
+              <!-- Fallback image for browsers that do not support the picture tag -->
+              <img class="rounded-3" src="images/character-vector.png" alt="Responsive Image" class="img-fluid">
+            </picture>
+            <!-- <img class="rounded-3" src="images/character-vector.png" alt=""> -->
+          </div>
         </div>
         <div class="col-md-6 order-1 order-md-2">
           <h3>Character Vectorization</h3>
