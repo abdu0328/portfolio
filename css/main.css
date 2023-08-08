@@ -33,14 +33,14 @@ body {
 } */
 
 .responsive-img-container {
-    width: 75%;
+    width: 50%;
     height: 400px;
     border: 5px;
     border-radius: 50pt 50pt 0 0;
     border-color: var(--brand-color);
     border-style: solid;
     object-fit: cover;
-    object-position: 0px 20%;
+    /* object-position: 0px 20%; */
   }
 
 /* Nav */
@@ -122,6 +122,27 @@ nav{
     margin-bottom: 2rem;
 }
 
+/* Visually hide the skip link by default */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    background-color: var(--brand-color);
+    color: var(--secondary-color);
+  }
+  
+  /* Make the skip link visible when focused */
+  .skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    left: auto;
+    top: auto;
+  }
+  
 .container-fluid {
     background-color: var(--brand-color);
     padding-top: 0.5rem;
@@ -258,6 +279,11 @@ footer {
     /* Horizontally center the content */
 }
 
+.skip-link-container {
+    float: right;
+    z-index: 999;
+}
+
 /* .project1 {
     background-color: #050300;
 }
@@ -356,7 +382,7 @@ footer {
     border-color: var(--brand-color);
     border-style: solid;
     object-fit:cover;
-    object-position: 0px 40%;
+    /* object-position: 0px 40%; */
     display: block;
     margin-left: auto;
     /* margin-right: auto; */
