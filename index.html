@@ -23,7 +23,7 @@
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
             <picture>
-                <img id="logo-img-container" itemprop="logo" src="images/YA-New-Logo-1-150x150.png" alt="YKA Logo">
+                <img id="logo-img-container" itemscope itemtype="https://schema.org/ImageObject" itemprop="logo" src="images/YA-New-Logo-1-150x150.png" alt="YKA Logo">
             </picture>
         </a>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -60,15 +60,15 @@
 <body>
   <div class="wrapper">
     <h2 class="custom-animation animate__animated animate__bounceInDown">Hi, I'm Yassin.</h2>
-    <div class="welcome text-center">
+    <section class="welcome text-center" role="region" aria-label="Welcome Area">
         <div class="row">
           <div class="col-lg-6">
-            <picture>
+            <picture itemscope itemtype="https://schema.org/ImageObject">
               <!-- Use source elements for different image sources -->
               <source media="(min-width: 1200px)" srcset="images/abdullah-headshot.jpg">
               <source media="(min-width: 768px)" srcset="images/abdullah-headshot.jpg">
               <!-- Fallback image for browsers that do not support the picture tag -->
-              <img class="responsive-img-container" src="images/abdullah-headshot.jpg" alt="Responsive Image" class="img-fluid">
+              <img itemprop="image" class="responsive-img-container" src="images/abdullah-headshot.jpg" alt="Yassin Headshot" class="img-fluid">
             </picture>
           </div>
           <div class="text-content col-lg-6">
@@ -76,9 +76,9 @@
             <p>I do digital product design and multimedia development. Currently, I'm an Interactive Media and Design student at Algonquin College.</p>
           </div>
         </div>
-    </div>
+    </section>
 
-    <section class="projectOverview">
+    <section class="projectOverview" role="region" aria-label="Project Overview">
       <!-- card content -->
       <!-- row 1 -->
       <h3>My Work</h3>
@@ -89,12 +89,12 @@
               <h5>Sub Title</h5>
               <h4>Main Title</h4>
             </div>
-            <picture>
+            <picture itemscope itemtype="https://schema.org/ImageObject">
               <!-- Use source elements for different image sources -->
               <source media="(min-width: 1200px)" srcset="images/vector-final-thumbnail.png">
               <source media="(min-width: 768px)" srcset="images/vector-final-thumbnail.png">
               <!-- Fallback image for browsers that do not support the picture tag -->
-              <img src="images/vector-final-thumbnail.png" alt="Responsive Image" class="card-img-top img-fluid">
+              <img itemprop="image" src="images/vector-final-thumbnail.png" alt="Responsive Image" class="card-img-top img-fluid">
             </picture>
             <!-- <img src="images/uxui.jpg" class="card-img-top" alt="Image"> -->
             <div class="card-body project1">
@@ -109,12 +109,12 @@
               <h5>Digital Graphics</h5>
               <h4>Graphic Design Playground</h4>
             </div>
-            <picture>
+            <picture itemscope itemtype="https://schema.org/ImageObject">
               <!-- Use source elements for different image sources -->
               <source media="(min-width: 1200px)" srcset="images/vector-final-thumbnail.png">
               <source media="(min-width: 768px)" srcset="images/vector-final-thumbnail.png">
               <!-- Fallback image for browsers that do not support the picture tag -->
-              <img src="images/vector-final-thumbnail.png" alt="Responsive Image" class="card-img-top img-fluid">
+              <img itemprop="image" src="images/vector-final-thumbnail.png" alt="Responsive Image" class="card-img-top img-fluid">
             </picture>
             <!-- <img src="images/vector-final-thumbnail.png" class="card-img-top" alt="Image"> -->
             <div class="card-body project2">
@@ -132,12 +132,12 @@
               <h5>Photography</h5>
               <h4>Curation of Photoshoots</h4>
             </div>
-            <picture>
+            <picture itemscope itemtype="https://schema.org/ImageObject">
               <!-- Use source elements for different image sources -->
               <source media="(min-width: 1200px)" srcset="images/230412_untitled_57.jpg">
               <source media="(min-width: 768px)" srcset="images/230412_untitled_57.jpg">
               <!-- Fallback image for browsers that do not support the picture tag -->
-              <img src="images/230412_untitled_57.jpg" alt="Responsive Image" class="card-img-top img-fluid">
+              <img itemprop="image" src="images/230412_untitled_57.jpg" alt="Responsive Image" class="card-img-top img-fluid">
             </picture>
             <!-- <img src="images/230412_untitled_57.jpg" class="card-img-top" alt="Image"> -->
             <div class="card-body project3">
@@ -146,63 +146,55 @@
           </div>
         </div>
 
-        <div class="col-md-5">
-          <div class="card">
-            <div class="card-title">
-              <h5>Other Work</h5>
-              <h4>Project Playground</h4>
-            </div>
-
-            <picture>
-              <!-- Use source elements for different image sources -->
-              <source media="(min-width: 1200px)" srcset="images/uxui.jpg">
-              <source media="(min-width: 768px)" srcset="images/uxui.jpg">
-              <!-- Fallback image for browsers that do not support the picture tag -->
-              <img src="images/uxui.jpg" alt="Responsive Image" class="card-img-top img-fluid">
-            </picture>
-            <!-- <img src="images/uxui.jpg" class="card-img-top" alt="Image"> -->
-            <div class="card-body project4">
-              <a href="project-4.html" class="btn btn-primary card-button">Learn More</a>
+          <div class="col-md-5">
+            <div class="card">
+              <div class="card-title">
+                <h5>Other Work</h5>
+                <h4>Project Playground</h4>
+              </div>
+              <picture itemscope itemtype="https://schema.org/ImageObject">
+                <!-- Use source elements for different image sources -->
+               <source media="(min-width: 1200px)" srcset="images/uxui.jpg">
+               <source media="(min-width: 768px)" srcset="images/uxui.jpg">
+                <!-- Fallback image for browsers that do not support the picture tag -->
+               <img itemprop="image" src="images/uxui.jpg" alt="Responsive Image" class="card-img-top img-fluid">
+              </picture>
+              <!-- <img src="images/uxui.jpg" class="card-img-top" alt="Image"> -->
+              <div class="card-body project4">
+                <a href="project-4.html" class="btn btn-primary card-button">Learn More</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </div>
+      </section>
+    </div>
 
-  <footer class="text-center">
+  <footer class="text-center" role="contentinfo">
     <!-- Grid container -->
     <div class="container pt-0 pb-0">
       <!-- Section: Social media -->
       <section class="mb-0">
-        <!-- Instagram -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="https://instagram.com/yassin.jpg" target="_blank"
-          role="button"><i class="fab fa-instagram"></i></a>
-  
+      <!-- Instagram -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="https://instagram.com/yassin.jpg" target="_blank"
+        role="button"><i class="fab fa-instagram"></i></a>
         <!-- Linkedin -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="https://www.linkedin.com/in/yassin-abdullah/" target="_blank"
-          role="button"><i class="fab fa-linkedin"></i></a>
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="https://www.linkedin.com/in/yassin-abdullah/" target="_blank"
+        role="button"><i class="fab fa-linkedin"></i></a>
         <!-- Github -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="https://github.com/abdu0328" target="_blank"
-          role="button"><i class="fab fa-github"></i></a>
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="https://github.com/abdu0328" target="_blank"
+        role="button"><i class="fab fa-github"></i></a>
       </section>
-      <!-- Section: Social media -->
     </div>
-    <!-- Grid container -->
   
     <!-- Copyright -->
     <div class="text-center text-dark p-3">
       © 2023 Yassin Abdullah (yka designs)
     </div>
-    <!-- Copyright -->
-
   </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS source -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
