@@ -46,7 +46,7 @@ body {
   }
 
 /* Nav */
-/* Remove border from toggler */
+/* remove border from toggler */
 .navbar-toggler {
     border: 0 !important;
 }
@@ -59,7 +59,7 @@ body {
     border: 0 !important;
 }
 
-/* Lines of the Toggler */
+/* lines of the toggler */
 .toggler-icon{
     width: 30px;
     height: 3px;
@@ -68,12 +68,12 @@ body {
     transition: all 0.2s;
 }
 
-/* Adds Space between the lines */
+/* adds space between the lines */
 .middle-bar{
     margin: 5px auto;
 }
 
-/* State when navbar is opened (START) */
+/* state when navbar is opened (START) */
 .navbar-toggler .top-bar {
     transform: rotate(45deg);
     transform-origin: 10% 10%;
@@ -88,9 +88,9 @@ body {
     transform: rotate(-45deg);
     transform-origin: 10% 90%;
 }
-/* State when navbar is opened (END) */
+/* state when navbar is opened (END) */
 
-/* State when navbar is collapsed (START) */
+/* state when navbar is collapsed (START) */
 .navbar-toggler.collapsed .top-bar {
     transform: rotate(0);
 }
@@ -103,9 +103,9 @@ body {
 .navbar-toggler.collapsed .bottom-bar {
     transform: rotate(0);
 }
-/* State when navbar is collapsed (END) */
+/* states when navbar is collapsed (END) */
 
-/* Color of Toggler when collapsed */
+/* colour of nav bar when toggled*/
 .navbar-toggler.collapsed .toggler-icon {
     background-color: var(--secondary-color);
 }
@@ -118,27 +118,21 @@ nav {
     background-color: var(--brand-color);
 }
 
-/* .nav-link:hover,
-.nav-item:hover {
-    background-color: #ff9900;
-    color: var(--accent-color);
-    border-radius: 5px;
-} */
-
 .custom-nav-link {
-    /* Default styles */
+    /* default styles */
     color: var(--secondary-color);
-  }
+}
 
-  /* Hover styles */
-  .custom-nav-link:hover {
+/* Hover styles */
+.custom-nav-link:hover {
     color: var(--accent-color);
     background-color: #ff9900;
     text-decoration: none;
     border-radius: 5px;
-  }
+}
 
-/* Visually hide the skip link by default */
+/* skip link styles */
+/* hiding skip link */
 .skip-link {
     position: absolute;
     /* left: -9999px; */
@@ -153,7 +147,6 @@ nav {
     justify-content: center;
 }
   
-/* Make the skip link visible when focused */
 .skip-link:focus {
 position: absolute;
 width: auto;
@@ -171,7 +164,7 @@ top: auto;
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 2; /* Ensure the navigation is above other content */ 
+    z-index: 2;
 }
   
 .container-fluid {
@@ -258,7 +251,6 @@ p {
     border-radius: 4px;
 }
 
-
 footer {
     background-color: var(--brand-color);
     padding-top: 1rem;
@@ -266,7 +258,7 @@ footer {
 }
 
 .card {
-    height: 425px; /* Set your desired fixed height */
+    height: 425px;
     border-radius: 25px;
     overflow: hidden;
     margin: 0 auto;
@@ -284,7 +276,7 @@ footer {
 
 .card-img-top {
     width: 100%;
-    height: 250px; /* Adjust as needed */
+    height: 250px;
     object-fit: cover;
     border-radius: 0;
 }
@@ -294,7 +286,6 @@ footer {
     justify-content: center;
     align-items: flex-end;
     height: 50%; 
-    /* Adjust as needed */
     /* padding: 10px; */
 }
 
@@ -307,21 +298,18 @@ footer {
 .card-button-connect {
     width: 150px;
     height: 40px;
-     /* Add a fixed height to vertically center the text */
+     /* add a fixed height to vertically center text */
     background-color: var(--brand-color);
     border-color: #fdbe1a;
     /* display: flex; */
     align-items: center; 
-    /* Vertically center the content */
     justify-content: center; 
-    /* Horizontally center the content */
 }
 
 .custom-btn-link {
-    /* Default styles */
+    /* default styles */
     color: var(--secondary-color);
     /* transition: background-color 0.3s, color 0.3s, border-color 0.3s; */
-    /* Modify the padding if needed */
     padding: 0.5rem 1rem;
   }
 
@@ -330,7 +318,6 @@ footer {
     z-index: 999;
     color: var(--accent-color);
     /* transition: background-color 0.3s, color 0.3s, border-color 0.3s; */
-    /* Modify the padding if needed */
 }
 
 .skip-link-container,
@@ -347,21 +334,6 @@ footer {
     text-decoration: none;
 }
 
-/* .project1 {
-    background-color: #050300;
-}
-
-.project2 {
-    background-color: aqua;
-}
-
-.project3 {
-    background-color: #204165;
-}
-.project4 {
-    background-color: #204165;
-} */
-
 /* Pulse Animation
 @keyframes continuousPulse {
     0%, 100% {
@@ -372,32 +344,33 @@ footer {
     }
 }
 
-
 .continuous-pulse {
     animation: continuousPulse 2s infinite;
 } */
 
 .custom-animation {
-    animation: custom-bounceInDown 1.2s; /* Custom animation duration */
-    animation-fill-mode: both; /* Keep animation effects after animation completes */
+    animation: custom-bounceInDown 1.2s; 
+    animation-fill-mode: both; 
 }
 
-/* Define the custom keyframe animation */
+/* Animation */
 @keyframes custom-bounceInDown {
-    0%, 20%, 40% {
-        opacity: 0; /* Hide the element */
-        transform: translateY(-1000px); /* Move the element off-screen */
+    0%, 
+    20%, 
+    40% {
+        opacity: 0; 
+        transform: translateY(-1000px); 
     }
     60% {
-        opacity: 0.5; /* Show the element */
-        transform: translateY(20px); /* Move down slightly */
+        opacity: 0.5; 
+        transform: translateY(20px); /* down */
     }
     80% {
         opacity: 1;
-        transform: translateY(-05px); /* Move up slightly */
+        transform: translateY(-05px); /* up */
     }
     100% {
-        transform: translateY(0); /* Bring the element down */
+        transform: translateY(0); /* down */
     }
 }
 
@@ -407,7 +380,8 @@ footer {
     align-items: center;
     max-width: 100%;
     margin: 0 auto;
-  }
+}
+
 
   
   /* @media screen and (min-width: 760px) and (max-width:990px){
@@ -439,7 +413,7 @@ footer {
 
 
 
-@media (min-width: 991px) { /* Adjust the breakpoint as needed */
+@media (min-width: 991px) { 
 /* .navbar ul li{
     display: flex;
     justify-content: center;
@@ -460,7 +434,7 @@ footer {
     }
 
 .navbar-nav .nav-item {
-    margin-right: 20px; /* Adjust the spacing between menu items */
+    margin-right: 20px; /* adjust the spacing between menu items */
 }
 
 .text-content {
@@ -539,13 +513,11 @@ p {
 .card-button-connect {
     width: 150px;
     height: 50px;
-        /* Add a fixed height to vertically center the text */
+    /* add a fixed height to vertically center text */
     background-color: var(--brand-color);
     border-color: #fdbe1a;
     display: flex;
     align-items: center; 
-    /* Vertically center the content */
     justify-content: center; 
-    /* Horizontally center the content */
     }
 }
