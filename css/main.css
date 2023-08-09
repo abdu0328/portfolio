@@ -216,6 +216,12 @@ p {
     border-style: solid;
 }
 
+.btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--brand-color);
+    border-color: var(--brand-color);
+  }
+
 /* welcome */
 .welcome {
     margin-top: 2rem;
