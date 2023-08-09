@@ -9,7 +9,7 @@ Challenges:
 
 Throughout the development phase, I encountered a few challenges that tested my problem-solving skills and patience. One notable challenge that came across several times was achieving perfect alignment and consistent spacing in various areas of my portfolio. I tackled this challenge by taking advantage of Bootstrap's grid system and custom CSS adjustments to personalize the layout and achieve my desired look.
 
-Another challenge I faced was deriving many image sizes to optimize them for web performance without compromising image quality. I implemented image compression to every image that I believed needed it to ensure fast loading times without sacrificing visual appeal.
+Another challenge I faced that tested my patience more so was deriving many image sizes to optimize them for web performance without compromising image quality. I implemented image compression to every image that I believed needed it to ensure fast loading times without sacrificing visual appeal.
 
 Key Learnings:
 
