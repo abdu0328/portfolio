@@ -110,13 +110,33 @@ body {
     background-color: var(--secondary-color);
 }
 
-.nav-item{
+.nav-item {
     text-align: center;
 }
 
-nav{
+nav {
     background-color: var(--brand-color);
 }
+
+/* .nav-link:hover,
+.nav-item:hover {
+    background-color: #ff9900;
+    color: var(--accent-color);
+    border-radius: 5px;
+} */
+
+.custom-nav-link {
+    /* Default styles */
+    color: var(--secondary-color);
+  }
+
+  /* Hover styles */
+  .custom-nav-link:hover {
+    color: var(--accent-color);
+    background-color: #ff9900;
+    text-decoration: none;
+    border-radius: 5px;
+  }
 
 /* Visually hide the skip link by default */
 .skip-link {
@@ -131,7 +151,7 @@ nav{
     color: var(--secondary-color);
     z-index: 2000;
     justify-content: center;
-  }
+}
   
 /* Make the skip link visible when focused */
 .skip-link:focus {
@@ -232,8 +252,8 @@ p {
 
 /* CSS for the tag */
 .blog-tag {
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #ff9900;
+    color: var(--secondary-color);
     padding: 2px 8px;
     border-radius: 4px;
 }
@@ -297,9 +317,34 @@ footer {
     /* Horizontally center the content */
 }
 
-.skip-link-container {
+.custom-btn-link {
+    /* Default styles */
+    color: var(--secondary-color);
+    /* transition: background-color 0.3s, color 0.3s, border-color 0.3s; */
+    /* Modify the padding if needed */
+    padding: 0.5rem 1rem;
+  }
+
+.to-top {
     float: right;
     z-index: 999;
+    color: var(--accent-color);
+    /* transition: background-color 0.3s, color 0.3s, border-color 0.3s; */
+    /* Modify the padding if needed */
+}
+
+.skip-link-container,
+.custom-btn-link:hover {
+    background-color: #ff9900;
+    color: var(--accent-color);
+    border-color: #ff9900;
+    text-decoration: none;
+}
+
+.custom-btn-link:hover {
+    background-color: #ff9900;
+    color: var(--accent-color);
+    text-decoration: none;
 }
 
 /* .project1 {
