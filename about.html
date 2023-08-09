@@ -19,6 +19,7 @@
 </head>
 
 <header>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
@@ -64,16 +65,23 @@
             <div class="row">
                 <div class="image-content col-lg-6">
                     <picture itemscope itemtype="https://schema.org/ImageObject">
-                        <img class="responsive-img-container" itemprop="logo" src="images/abdullah-headshot.jpg" alt="Yassin's Professional Headshot">
-                    </picture>
+                        <!-- Use source elements for different image sources -->
+                        <source media="(min-width: 1200px)" srcset="images/abdullah-headshot-1200_x_1600.jpg">
+                        <source media="(min-width: 768px)" srcset="images/abdullah-headshot-600_x_800.jpg">
+                        <!-- Fallback image for browsers that do not support the picture tag -->
+                        <img itemprop="image" class="responsive-img-container" src="images/abdullah-headshot-600_x_800.jpg" alt="Yassin Headshot" class="img-fluid">
+                      </picture>
                 </div>
                 <div class="text-content col-lg-6 pr-5">
                     <h3 class="subheading-section">A Designer & Developer from Ottawa, Canada.</h3>
                     <p>I enjoy conjuring up experiences that captivate, welcome everyone, and revolve around users! 🌟</p>
-                <div class="element continuous-pulse">
-                <a href="mailto:yassinabdd@gmail.com" class="btn card-button-connect">Lets Connect</a>
+                    <a href="mailto:yassinabdd@gmail.com" class="btn card-button-connect">Lets Connect</a>
+                    <!-- <div class="element continuous-pulse">
+                    <a href="mailto:yassinabdd@gmail.com" class="btn card-button-connect">Lets Connect</a>
+                    </div> -->
+                    </div>
+                </div>
             </div>
-          </div>
         </section>
     </div>
 
@@ -90,7 +98,7 @@
         <li>&copy;2023 Yassin Abdullah</li>
     </footer> -->
 
-    <section class="my-photo-gallery" role="region" aria-label="Yassin's Photo Gallery Section">
+    <section id="main-content" class="my-photo-gallery" role="region" aria-label="Yassin's Photo Gallery Section">
         <div class="container">
             <!-- <h2>Title</h2> -->
             <div class="photo-gallery">
@@ -101,30 +109,30 @@
                     <div class="photo">
                         <picture itemscope itemtype="https://schema.org/ImageObject">
                             <!-- Use source elements for different image sources -->
-                            <source media="(min-width: 1200px)" srcset="images/alberta.jpg">
-                            <source media="(min-width: 768px)" srcset="images/alberta.jpg">
+                            <source media="(min-width: 1200px)" srcset="images/alberta-1200_x_799.jpg">
+                            <source media="(min-width: 768px)" srcset="images/alberta-600_x_399.jpg">
                             <!-- Fallback image for browsers that do not support the picture tag -->
-                            <img itemprop="image" src="images/alberta.jpg" alt="Responsive Image" class="img-fluid">
+                            <img itemprop="image" src="images/alberta-600_x_399.jpg" alt="Responsive Image" class="img-fluid">
                         </picture>
                         <!-- <img src="images/alberta.jpg" alt=""> -->
                     </div>
                     <div class="photo">
                         <picture itemscope itemtype="https://schema.org/ImageObject">
                             <!-- Use source elements for different image sources -->
-                            <source media="(min-width: 1200px)" srcset="images/alberta-film.jpg">
-                            <source media="(min-width: 768px)" srcset="images/alberta-film.jpg">
+                            <source media="(min-width: 1200px)" srcset="images/alberta-film-1200_x_1803.jpg">
+                            <source media="(min-width: 768px)" srcset="images/alberta-film-600_x_901.jpg">
                             <!-- Fallback image for browsers that do not support the picture tag -->
-                            <img itemprop="image" src="images/alberta-film.jpg" alt="Responsive Image" class="img-fluid">
+                            <img itemprop="image" src="images/alberta-film-600_x_901.jpg" alt="Responsive Image" class="img-fluid">
                         </picture>
                         <!-- <img src="images/alberta-film.jpg" alt=""> -->
                     </div>
                     <div class="photo">
                         <picture itemscope itemtype="https://schema.org/ImageObject">
                             <!-- Use source elements for different image sources -->
-                            <source media="(min-width: 1200px)" srcset="images/climbing.jpg">
-                            <source media="(min-width: 768px)" srcset="images/climbing.jpg">
+                            <source media="(min-width: 1200px)" srcset="images/climbing-1200_x_800.jpg">
+                            <source media="(min-width: 768px)" srcset="images/climbing-600_x_400.jpg">
                             <!-- Fallback image for browsers that do not support the picture tag -->
-                            <img itemprop="image" src="images/climbing.jpg" alt="Responsive Image" class="img-fluid">
+                            <img itemprop="image" src="images/climbing-600_x_400.jpg" alt="Responsive Image" class="img-fluid">
                         </picture>
                         <!-- <img src="images/climbing.jpg" alt=""> -->
                     </div>
@@ -133,30 +141,30 @@
                     <div class="photo">
                         <picture itemscope itemtype="https://schema.org/ImageObject">
                             <!-- Use source elements for different image sources -->
-                            <source media="(min-width: 1200px)" srcset="images/iceland1.jpg">
-                            <source media="(min-width: 768px)" srcset="images/iceland1.jpg">
+                            <source media="(min-width: 1200px)" srcset="images/iceland1-1200_x_1792.jpg">
+                            <source media="(min-width: 768px)" srcset="images/iceland1-600_x_896.jpg">
                             <!-- Fallback image for browsers that do not support the picture tag -->
-                            <img itemprop="image" src="images/iceland1.jpg" alt="Responsive Image" class="img-fluid">
+                            <img itemprop="image" src="images/iceland1-600_x_896.jpg" alt="Responsive Image" class="img-fluid">
                         </picture>
                         <!-- <img src="images/iceland1.jpg" alt=""> -->
                     </div>
                     <div class="photo">
                         <picture itemscope itemtype="https://schema.org/ImageObject">
                             <!-- Use source elements for different image sources -->
-                            <source media="(min-width: 1200px)" srcset="images/iceland-friends.jpg">
-                            <source media="(min-width: 768px)" srcset="images/iceland-friends.jpg">
+                            <source media="(min-width: 1200px)" srcset="images/iceland-friends-1200_x_900.jpg">
+                            <source media="(min-width: 768px)" srcset="images/iceland-friends-600_x_450.jpg">
                             <!-- Fallback image for browsers that do not support the picture tag -->
-                            <img itemprop="image" src="images/iceland-friends.jpg" alt="Responsive Image" class="img-fluid">
+                            <img itemprop="image" src="images/iceland-friends-600_x_450.jpg" alt="Responsive Image" class="img-fluid">
                         </picture>
                         <!-- <img src="images/iceland-friends.jpg" alt=""> -->
                     </div>
                     <div class="photo">
                         <picture itemscope itemtype="https://schema.org/ImageObject">
                             <!-- Use source elements for different image sources -->
-                            <source media="(min-width: 1200px)" srcset="images/lily.jpg">
-                            <source media="(min-width: 768px)" srcset="images/lily.jpg">
+                            <source media="(min-width: 1200px)" srcset="images/lily-1200_x_2134.jpg">
+                            <source media="(min-width: 768px)" srcset="images/lily-600_x_1067.jpg">
                             <!-- Fallback image for browsers that do not support the picture tag -->
-                            <img itemprop="image" src="images/lily.jpg" alt="Responsive Image" class="img-fluid">
+                            <img itemprop="image" src="images/lily-600_x_1067.jpg" alt="Responsive Image" class="img-fluid">
                         </picture>
                         <!-- <img src="images/lily.jpg" alt=""> -->
                     </div>
@@ -171,9 +179,13 @@
             </div>   
         </div>
     </section>
+    </body>
 
     <footer class="text-center" role="contentinfo">
         <!-- Grid container -->
+        <div class="skip-link-container">
+            <a class="btn btn-link btn-floating btn-lg m-1" href="#top" id="back-to-top" role="button"><i class="fa-solid fa-arrow-up" style="color: #050505;"></i></a>
+          </div>
         <div class="container pt-0 pb-0">
         <!-- Section: Social media -->
         <section class="mb-0">
@@ -198,5 +210,4 @@
     </footer>
     <!-- Bootstrap JS source -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-</body>
 </html>
