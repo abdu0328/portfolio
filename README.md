@@ -14,3 +14,8 @@ Another challenge I faced that tested my patience more so was deriving many imag
 Key Learnings:
 
 I've learned how to make user-friendly designs that work well on various devices, thanks to responsive design principles and Bootstrap. I've also improved my problem-solving abilities by overcoming technical challenges during development. Overall, creating my web portfolio has improved my HTML, CSS, and Bootstrap skills, and taught me the value of detail and ongoing learning in web development.
+
+List of any assets/resources used (not my own) include:
+Framework: Bootstrap 5.3.1
+CSS Animation Library: Animate.css
+Fonts: Google Fonts - Poppins 400, 800
