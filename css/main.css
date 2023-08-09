@@ -346,7 +346,7 @@ footer {
     } */
 
     
-@media (max-width: 990px) {
+/* @media (max-width: 990px) { }*/
 
     .column{
         display: flex;
@@ -365,10 +365,10 @@ footer {
     .photo-gallery{
         flex-direction: column;
     }
-}
 
 
-@media (min-width: 991px) { /* Adjust the breakpoint as needed */
+/* was 991 */
+@media (min-width: 768px) { /* Adjust the breakpoint as needed */
 /* .navbar ul li{
     display: flex;
     justify-content: center;
