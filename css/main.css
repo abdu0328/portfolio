@@ -65,7 +65,7 @@ body {
 .toggler-icon{
     width: 30px;
     height: 3px;
-    background-color: var(--secondary-color);
+    background-color: var(--brand-color);
     display: block;
     transition: all 0.2s;
 }
@@ -222,7 +222,7 @@ p {
     text-align: center;
     color: var(--accent-color);
     font-size: var(--p-size);
-    font-weight: 450;
+    font-weight: 500;
 }
 
 /* buttons */
