@@ -1,8 +1,8 @@
 :root {
     /* brand colours */
-    --brand-color: #FEC32D;
-    --secondary-color: #050300;
-    --accent-color: #FBFCFF;
+    --brand-color: #25311b;
+    --secondary-color: #e7e2ad;
+    --accent-color: #6b914c;
     /* default heading sizes */
     --h2-size: 70px;
     --h3-size: 40px;
@@ -18,13 +18,14 @@
   }
 
 body {
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
 }
 
 .wrapper {
     padding-left: 2rem;
     padding-right: 2rem;
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
+    background: linear-gradient(to right, var(--accent-color), var(--secondary-color));
     padding-top: 80px;
 }
 
@@ -35,8 +36,9 @@ body {
 } */
 
 .responsive-img-container {
-    width: 50%;
-    height: 430px;
+    width: 75%;
+    /* height previous 350px */
+    height:auto;
     border: 5px;
     border-radius: 50pt 50pt 0 0;
     border-color: var(--brand-color);
@@ -107,7 +109,7 @@ body {
 
 /* colour of nav bar when toggled*/
 .navbar-toggler.collapsed .toggler-icon {
-    background-color: var(--secondary-color);
+    background-color: var(--brand-color);
 }
 
 .nav-item {
@@ -126,7 +128,7 @@ nav {
 /* Hover styles */
 .custom-nav-link:hover {
     color: var(--accent-color);
-    background-color: #ff9900;
+    background-color: var(--accent-color);
     text-decoration: none;
     border-radius: 5px;
 }
@@ -168,7 +170,8 @@ top: auto;
 }
   
 .container-fluid {
-    background-color: var(--brand-color);
+    /* background-color: var(--secondary-color); */
+    background: linear-gradient(to right, var(--accent-color), var(--secondary-color));
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
@@ -205,6 +208,7 @@ h3, .subheading-section {
 
 h4 {
     font-size: var(--h4-size);
+    color: var(--secondary-color)
 }
 
 h5 {
@@ -218,6 +222,7 @@ p {
     text-align: center;
     color: var(--accent-color);
     font-size: var(--p-size);
+    font-weight: 450;
 }
 
 /* buttons */
@@ -245,7 +250,7 @@ p {
 
 /* CSS for the tag */
 .blog-tag {
-    background-color: #ff9900;
+    background-color: var(--accent-color);
     color: var(--secondary-color);
     padding: 2px 8px;
     border-radius: 4px;
@@ -255,20 +260,26 @@ footer {
     background-color: var(--brand-color);
     padding-top: 1rem;
     padding-bottom: 1rem;
+    color: var(--accent-color);
 }
+
+/* .footer-text {
+    color: var(--accent-color);
+} */
 
 .card {
     height: 425px;
-    border-radius: 25px;
+    border-radius: 15px;
     overflow: hidden;
     margin: 0 auto;
     margin-bottom: 1rem;
     /* maybe make this a different color */
-    background-color: #fedf8f;
+    background-color: var(--brand-color);
     --bs-card-title-spacer-y: 0rem;
 }
 
 .card-title {
+    text-align: left;
     background-color: var(--brand-color);
     padding: 10px;
     font-weight: bold;
@@ -292,7 +303,7 @@ footer {
 .card-button {
     width: 150px;
     background-color: var(--brand-color);
-    border-color: #fdbe1a;
+    border-color: var(--secondary-color);
 }
 
 .card-button-connect {
@@ -322,14 +333,14 @@ footer {
 
 .skip-link-container,
 .custom-btn-link:hover {
-    background-color: #ff9900;
+    background-color: var(--secondary-color);
     color: var(--accent-color);
-    border-color: #ff9900;
+    border-color: var(--secondary-color);
     text-decoration: none;
 }
 
 .custom-btn-link:hover {
-    background-color: #ff9900;
+    background-color: var(--secondary-color);
     color: var(--accent-color);
     text-decoration: none;
 }
@@ -419,6 +430,11 @@ footer {
     justify-content: center;
 } */
 
+.projectOverview {
+    margin-right: 175px;
+    margin-left: 175px;
+}
+
 .responsive-img-container {
     width: 350px;
     height: 400px;
@@ -476,7 +492,7 @@ h4 {
 
 h5 {
     font-size: var(--h5-web-size);
-    color: var(--secondary-color);
+    color: var(--accent-color);
 }
 
 p {
@@ -515,7 +531,8 @@ p {
     height: 50px;
     /* add a fixed height to vertically center text */
     background-color: var(--brand-color);
-    border-color: #fdbe1a;
+    border-color: var(--brand-color);
+    color: var(--secondary-color);
     display: flex;
     align-items: center; 
     justify-content: center; 
